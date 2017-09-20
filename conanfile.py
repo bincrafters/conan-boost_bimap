@@ -1,4 +1,5 @@
-from conans import ConanFile, tools, os
+from conans import ConanFile
+
 
 class BoostBimapConan(ConanFile):
     name = "Boost.Bimap"

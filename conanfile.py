@@ -7,7 +7,7 @@ from conans import ConanFile, tools
 class BoostBimapConan(ConanFile):
     name = "boost_bimap"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-bimap"
+    url = "https://github.com/bincrafters/conan-boost_bimap"
 
     lib_short_names = ["bimap"]
     is_in_cycle_group = True

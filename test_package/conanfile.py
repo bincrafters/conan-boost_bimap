@@ -10,7 +10,7 @@ class TestPackageConan(ConanFile):
     generators = "cmake"
 
     def requirements(self):
-        boost_deps = ['bimap', 'concept_check', 'config', 'container_hash', 'core', 'iterator', 'lambda', 'mpl', 'multi_index', 'preprocessor', 'property_map', 'serialization', 'static_assert', 'throw_exception', 'type_traits', 'utility']
+        boost_deps = ['concept_check', 'config', 'container_hash', 'core', 'iterator', 'lambda', 'mpl', 'multi_index', 'preprocessor', 'serialization', 'static_assert', 'throw_exception', 'type_traits', 'utility']
         for lib in boost_deps:
             self.requires("boost_" + lib + "/1.67.0@" + self.user + "/" + self.channel)
 

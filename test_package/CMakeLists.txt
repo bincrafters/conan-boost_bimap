@@ -10,6 +10,7 @@ file(GLOB SOURCE_FILES *.cpp)
 
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})
 target_link_libraries(${CMAKE_PROJECT_NAME} 
+  CONAN_PKG::boost_bimap
   CONAN_PKG::boost_concept_check
   CONAN_PKG::boost_config
   CONAN_PKG::boost_container_hash
